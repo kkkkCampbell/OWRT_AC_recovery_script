@@ -1,8 +1,8 @@
 #AC_RECOVERY_SCRIPT
 
-tee /etc/init.d/ac_recovery > /dev/null << 'EOF'
+tee /etc/init.d/ac_recovery.sh > /dev/null << 'EOF'
 #!/bin/sh /etc/rc.common
-#/etc/init.d/ac_recovery
+#/etc/init.d/ac_recovery.sh
 
 USE_PROCD=0
 
@@ -51,6 +51,6 @@ shutdown() {
 EOF
 
 
-chmod +x /etc/init.d/ac_recovery
-/etc/init.d/ac_recovery enable
+chmod +x /etc/init.d/ac_recovery.sh
+/etc/init.d/ac_recovery.sh enable
 > /flagfile
