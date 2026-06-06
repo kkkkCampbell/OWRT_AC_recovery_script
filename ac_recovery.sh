@@ -54,3 +54,4 @@ EOF
 chmod +x /etc/init.d/ac_recovery.sh
 /etc/init.d/ac_recovery.sh enable
 > /flagfile
+echo "DONE!"
