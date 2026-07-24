@@ -1,5 +1,7 @@
 #AC_RECOVERY_SCRIPT
-# tee EOF for copy&paste installation
+
+# tee EOF for copy-paste installation if git is unavailable
+
 
 tee /etc/init.d/ac_recovery.sh > /dev/null << 'EOF'
 #!/bin/sh /etc/rc.common
